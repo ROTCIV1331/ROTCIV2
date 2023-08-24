@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>  
+        body{
+            background-image: linear-gradient(to right , rgb(216, 20, 20), rgb(155, 15, 15));
+            
+        }
+
+
+        h1{ 
+            text-align: center;
+            margin: 60px 0 40px 0;
+            font-size: 1.5em;
+            color: #ffffff;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+        .lista{
+            background: rgb(153, 9, 9);
+            border-radius: 4px;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-shadow: 0 2px 6px rgb(122, 68, 54);
+        }
+
+        .titulo{ 
+            cursor: pointer;
+            padding: 10px;
+            font-size: 1.4em;
+            font-family: monospace;
+            color: #ffffff;
+        }
+
+        .titulo::after {
+            content: '💥';
+            float: right;
+            transition: transform .3s ease;
+        }
+        .conteudo{
+            padding: 10px;
+            color: #ffffff;
+            font-family:Helvetica;
+            font-size: .875em;
+            line-height: 1.4em;
+            display: none;
+            background-color: rgb(44, 38, 38);
+        }
+        .a2{
+            display: none;
+        }
+
+        .a2:checked + .a1 .conteudo{ 
+            display: inline-block;
+
+        }
+        .a2:checked + .a1 .titulo::after{
+            transform: rotate(155deg) scale(1.08);
+            content: X;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Ativando uma caixa</h1>
+
+    <div class="lista">
+        <input class="a2" id="titulo-1" type="checkbox">
+        <div class="a1">
+            <label for="titulo-1">
+                <h2 class="titulo"> VAMOS ATIVAR ESTA CAIXA</h2>
+            </label>
+            <a class="conteudo" href="#">teste1</a>
+            <a class="conteudo" href="#">teste2</a>
+            <a class="conteudo" href="#">teste3</a>
+            <a class="conteudo" href="#">teste4</a>
+            <a class="conteudo" href="#">teste5</a>
+            <a class="conteudo" href="#">teste6</a>
+        </div>
+    </div>
+    <center>
+    <img src="R.jfif" alt=""
+    width="1700">
+
+    
+</body>
+
+</html>
